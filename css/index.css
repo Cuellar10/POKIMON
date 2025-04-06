@@ -1,0 +1,62 @@
+body{
+    background-image: url('../imagenes/elpropio.jpg');
+    background-size: cover;
+}
+
+.titlePoki{
+    font-family: Pokimon;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.container h1{
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titleSub-poki{
+    justify-content: left;
+}
+
+.text-poki{
+    color: white;
+    font-family: Pokimon;
+    font-size: 25px;
+}
+
+.botton-group{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+}
+
+.botton-poki{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    height: 70px;
+    width: 20%;
+    font-size: 15px;
+    font-family: Pokimon;
+    border: none;
+    margin: 6px;
+    box-shadow: #fff 0px 0px 10px;
+}
+
+.botton-poki:hover{
+    background-color: #fff;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@font-face {
+    font-family: 'Pokimon';
+    src: url('../assets/fuentes/Minecraft.ttf') format('truetype');
+}

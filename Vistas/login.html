@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokimon</title>
-    <script src="../js/index.js"></script>
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
-<body>
-    <center>
-        <h1> Bienvenido al mundo Pokimon</h1>
-        <p>Bienvenido a mi primer juego en JavaScript</p>
-        
-        </center>
-        <hr>
-    <center>
-        <label for="Username">Username</label>
-        <input type="text" name="" id="Username">
-        <br>
-        <br>
-        <label for="">Password</label>
-        <input type="password" name="" id="Clave">
-        <br>
-        <br>
-        <button onclick="Loguear('Andrés','So')">Iniciar sesión</button>
-    </center>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>POKIMON</title>
+        <script src="../js/index.js"></script>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="titleSub-poki">
+                <h1 class="titlePoki">BIENVENIDO AL MUNDO POKIMON</h1>
+                <p class="text-poki">Ingresa para vivir la experiencia</p>
+            </div>
+            <br>
+
+        </div>
+        <div class="container-seg">
+            <div class="formulario-poki">
+                <table>
+                    <tr>
+                        <td>
+                            <label for>Username</label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-poki" name id="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for>Password</label>
+                        </td>
+                        <td>
+                            <input type="password" class="input-poki" name id="clave">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                            <button onclick="Loguear()" class="botton-poki">Inciar sesion</button>
+                        </td>
+                        
+                    </tr>
+                    
+                </table>                
+            </div>
+        </div>
+
+    </body>
 </html>
