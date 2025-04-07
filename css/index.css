@@ -38,7 +38,7 @@ body{
 .text-poki{
     color: white;
     font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
+    font-size: 27px;
     text-align: center;
     text-shadow:
     -2px -2px 0 #000,  
@@ -65,8 +65,7 @@ body{
     font-family: 'Press Start 2P', cursive;
     border: none;
     margin: 6px;
-    box-shadow: #fff 0px 0px 10px;
-    
+    box-shadow: #000000 10px 10px 20px;
 }
 
 .botton-poki:hover{

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.pokimon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    height: 250px;
+}
+
+.pokimon {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 150px;
+    transition: transform 0.2s;
+}
+
+.pokimon img {
+    width: 130px;
+    height: 130px;
+}
+
+.pokimon p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.pokimon:hover {
+    transform: scale(1.1);
+}
+.tipo {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 0 3px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: white;
+    font-weight: bold;
+  }
+  .veneno {
+    background-color: #A040A0;
+  }
+  
+  .fuego {
+    background-color: #F08030;
+  }
+  .agua {
+    background-color: #6890F0;
+  }
+  .tierra {
+    background-color: #E0C068;
+  }
+  .electrico {
+    background-color: #F8D030;
+  }
+  .hielo {
+    background-color: #98D8D8;
+  }
+  .lucha {
+    background-color: #C03028;
+  }
+  .normal {
+    background-color: #A8A878;
+  }
+  .roca {
+    background-color: #838280;
+  }
+  .volador{
+    background-color: #20066e;
+  }
+  .planta{
+    background-color: green;
+  }
+  .fantasma{
+    background-color: #705898;
+  }
+  .bicho{
+    background-color: #A8B820;
+  }
+  
+  
+  .stat {
+    font-size: 0.85rem;
+    margin: 0.2rem 0;
+  }
