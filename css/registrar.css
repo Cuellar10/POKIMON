@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body{
-    background-image: url('../imagenes/pika.jpg');
+    background-image: url('../imagenes/trio.jpg');
     background-size: cover;
 }
 
 .titlePoki{
-    font-family: Pokimon;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .container{
@@ -14,6 +16,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     height: 60vh;
+    
 }
 .container-seg{
     display: flex;
@@ -24,19 +27,30 @@ body{
 
 .container h1{
     font-size: 5rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #cc0000;
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
+    font-family: 'Press Start 2P', cursive;
 }
 
 .titleSub-poki{
-    justify-content: left;
-    text-align: right;
+    justify-content: center;
+    text-align: center; 
 }
 
 .text-poki{
-    color: white;
-    font-family: Pokimon;
-    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
+
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .botton-group{
@@ -49,7 +63,7 @@ body{
 .formulario-poki{
     background-color: white;
     height: 90px;
-    width: 30%;
+    width: 20%;
     border-radius: 10PX;
     padding: 10px;
     box-shadow: #fff 0px 0px 20px;
@@ -63,17 +77,17 @@ table{
 }
 
 table td{
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .botton-poki{
-    background-color: red;
+    background-color: #cc0000;
     color: white;
     border-radius: 20px;
     height: 50px;
     width: 60%;
     font-size: 15px;
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
     border: none;
     margin: 6px;
     margin-top: 17px;
@@ -82,7 +96,7 @@ table td{
 
 .botton-poki:hover{
     background-color: #fff;
-    color: red;
+    color: #cc0000;
     cursor: pointer;
     box-shadow: #000 0px 0px 10px;
     transition: 0.5s;
@@ -97,19 +111,12 @@ table td{
 }
 
 .link-poki{
-    font-family: Pokimon;
-    color: white;
+        color: white;
 }
 
 .formulario{
-   background-color: white;
+   background-color: rgb(196, 124, 124);
    width: 30%;
-   border-radius: 12px;
-   padding: 12px;
-}
-
-
-@font-face {
-    font-family: 'Pokimon';
-    src: url('../assets/fuentes/Minecraft.ttf') format('truetype');
+   border-radius: 10px;
+   padding: 9px;
 }

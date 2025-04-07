@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 body{
-    background-image: url('../imagenes/elpropio.jpg');
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('../imagenes/chari.png');
     background-size: cover;
 }
 
 .titlePoki{
-    font-family: Pokimon;
+    font-family: cursive;
 }
 
 .container{
@@ -12,12 +16,20 @@ body{
     justify-content: center;
     align-items: center;
     height: 70vh;
-}
-.container h1{
+
+}.container h1 {
+    color: #cc0000;
     font-size: 5rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    text-shadow:
+      -2px -2px 0 #000,  
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000; 
+  
 }
+
 
 .titleSub-poki{
     justify-content: left;
@@ -25,38 +37,42 @@ body{
 
 .text-poki{
     color: white;
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
     font-size: 25px;
+    text-align: center;
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
 }
 
-.botton-group{
+.botton-group {
     display: flex;
-    justify-content: left;
-    align-items: left;
-    margin: 10px;
+    justify-content: center; 
+    align-items: center;     
+    margin: 20px auto;       
+    gap: 20px;               
 }
 
 .botton-poki{
-    background-color: red;
-    color: white;
+    background-color: rgb(145, 11, 11);
+    color: #000000;
     border-radius: 20px;
     height: 70px;
     width: 20%;
     font-size: 15px;
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
     border: none;
     margin: 6px;
     box-shadow: #fff 0px 0px 10px;
+    
 }
 
 .botton-poki:hover{
-    background-color: #fff;
-    color: red;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     transition: 0.5s;
 }
 
-@font-face {
-    font-family: 'Pokimon';
-    src: url('../assets/fuentes/Minecraft.ttf') format('truetype');
-}

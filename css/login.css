@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body{
     background-image: url('../imagenes/fondo.jpg');
     background-size: cover;
@@ -22,10 +24,15 @@ body{
     height: 0vh;
 }
 
-.container h1{
+.container h1 {
     font-size: 5rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #a71f1f;
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
+    font-family: 'Press Start 2P', cursive;
 }
 
 .titleSub-poki{
@@ -34,8 +41,14 @@ body{
 
 .text-poki{
     color: white;
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
     font-size: 25px;
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
+
 }
 
 .botton-group{
@@ -62,7 +75,7 @@ table{
 }
 
 table td{
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .botton-poki{
@@ -72,9 +85,9 @@ table td{
     height: 50px;
     width: 60%;
     font-size: 15px;
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
     border: none;
-    margin: 6px;
+    margin: 6%;
     box-shadow: #fff 0px 0px 10px;
 }
 
@@ -86,20 +99,16 @@ table td{
     transition: 0.5s;
 }
 
-.input-poki{
+.input-poki{    
     border: solid 1px red;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 20px;
     padding: 6px;
 }
 
 .link-poki{
-    font-family: Pokimon;
+    font-family: 'Press Start 2P', cursive;
     color: white;
 }
 
 
-@font-face {
-    font-family: 'Pokimon';
-    src: url('../assets/fuentes/Minecraft.ttf') format('truetype');
-}
