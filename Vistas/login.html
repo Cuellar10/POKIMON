@@ -1,51 +1,83 @@
 <!DOCTYPE html>
+<!-- Documento HTML5 -->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>POKIMON</title>
-        <script src="../js/index.js"></script>
-        <link rel="stylesheet" href="../css/login.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="titleSub-poki">
-                <h1 class="titlePoki">BIENVENIDO NUEVAMENTE</h1>
-                <p class="text-poki">Ingresa para vivir la experiencia Pokimon</p>
-            </div>
-            <br>
+<!-- Idioma configurado en inglés (puedes cambiar a "es" si quieres español) -->
 
-        </div>
-        <div class="container-seg">
-            <div class="formulario-poki">
-                <table>
-                    <tr>
-                        <td>
-                            <label for>Username</label>
-                        </td>
-                        <td>
-                            <input type="text" class="input-poki" name id="username">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for>Password</label>
-                        </td>
-                        <td>
-                            <input type="password" class="input-poki" name id="clave">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <br>
-                            <button onclick="Loguear()" class="botton-poki">Iniciar sesion</button>
-                        </td>
-                        
-                    </tr>
-                    
-                </table>                
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 para soportar tildes y ñ -->
 
-    </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para que el diseño sea responsive en móviles -->
+
+    <title>POKIMON</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <script src="../js/index.js"></script>
+    <!-- Archivo JS donde está la función Loguear() -->
+
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- Archivo CSS que da estilo al login -->
+</head>
+
+<body>
+    <!-- Contenido visible de la página -->
+
+    <div class="container">
+        <!-- Contenedor para el título principal -->
+
+        <div class="titleSub-poki">
+            <h1 class="titlePoki">BIENVENIDO NUEVAMENTE</h1>
+            <!-- Título principal de la página -->
+
+            <p class="text-poki">Ingresa para vivir la experiencia Pokimon</p>
+            <!-- Subtítulo para dar ambiente -->
+        </div>
+        <br>
+    </div>
+
+    <div class="container-seg">
+        <!-- Contenedor para el formulario -->
+
+        <div class="formulario-poki">
+            <!-- Formulario visual para iniciar sesión -->
+
+            <table>
+                <!-- Se usa tabla para alinear etiquetas y campos de texto -->
+
+                <tr>
+                    <td>
+                        <label for>Username</label>
+                        <!-- Etiqueta para el campo de usuario -->
+                    </td>
+                    <td>
+                        <input type="text" class="input-poki" name id="username">
+                        <!-- Campo de texto para ingresar el nombre de usuario -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for>Password</label>
+                        <!-- Etiqueta para el campo de contraseña -->
+                    </td>
+                    <td>
+                        <input type="password" class="input-poki" name id="clave">
+                        <!-- Campo para escribir la contraseña (oculta) -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <br>
+                        <button onclick="Loguear()" class="botton-poki">Iniciar sesión</button>
+                        <!-- Botón que llama a la función Loguear() en el JS -->
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+</body>
 </html>

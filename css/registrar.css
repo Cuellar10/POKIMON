@@ -1,86 +1,97 @@
+/* 🎮 Fuente retro estilo consola */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body{
+/* 🌌 Fondo general */
+body {
     background-image: url('../imagenes/trio.jpg');
     background-size: cover;
 }
 
-.titlePoki{
-    color: rgb(255, 255, 255);
+/* 🟥 Título principal */
+.titlePoki {
+    color: white;
     font-size: 50px;
     font-family: 'Press Start 2P', cursive;
 }
 
-.container{
+/* 📦 Contenedor principal alineado a la derecha */
+.container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 60vh;
-    
 }
-.container-seg{
+
+/* 📦 Contenedor secundario, sin altura útil */
+.container-seg {
     display: flex;
     justify-content: right;
     align-items: right;
     height: 0vh;
 }
 
-.container h1{
+/* 🔠 Estilo de títulos grandes dentro del contenedor */
+.container h1 {
     font-size: 5rem;
     color: #cc0000;
-    text-shadow:
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
     font-family: 'Press Start 2P', cursive;
-}
-
-.titleSub-poki{
-    justify-content: center;
-    text-align: center; 
-}
-
-.text-poki{
-    color: rgb(255, 255, 255);
     text-shadow:
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
 
+/* 🧩 Subtítulo centrado */
+.titleSub-poki {
+    justify-content: center;
+    text-align: center;
+}
+
+/* 📝 Texto decorativo */
+.text-poki {
+    color: white;
     font-size: 20px;
     font-family: 'Press Start 2P', cursive;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
-.botton-group{
+/* 🔘 Grupo de botones alineados a la izquierda */
+.botton-group {
     display: flex;
     justify-content: left;
     align-items: left;
     margin: 10px;
 }
 
-.formulario-poki{
+/* 📋 Caja de formulario de entrada */
+.formulario-poki {
     background-color: white;
     height: 90px;
     width: 20%;
-    border-radius: 10PX;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: #fff 0px 0px 20px;
     text-align: center;
 }
 
-table{
+/* 🧾 Tabla dentro del formulario */
+table {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
 }
 
-table td{
+table td {
     font-family: 'Press Start 2P', cursive;
 }
 
-.botton-poki{
+/* 🟥 Botón principal */
+.botton-poki {
     background-color: #cc0000;
     color: white;
     border-radius: 20px;
@@ -94,7 +105,8 @@ table td{
     box-shadow: #fff 0px 0px 10px;
 }
 
-.botton-poki:hover{
+/* 🎯 Efecto hover en el botón */
+.botton-poki:hover {
     background-color: #fff;
     color: #cc0000;
     cursor: pointer;
@@ -102,7 +114,8 @@ table td{
     transition: 0.5s;
 }
 
-.input-poki{
+/* 🧾 Campos de entrada */
+.input-poki {
     border: solid 1px red;
     border-radius: 10px;
     height: 20px;
@@ -110,13 +123,15 @@ table td{
     padding: 6px;
 }
 
-.link-poki{
-        color: white;
+/* 🔗 Enlace personalizado */
+.link-poki {
+    color: white;
 }
 
-.formulario{
-   background-color: rgb(196, 124, 124);
-   width: 30%;
-   border-radius: 10px;
-   padding: 9px;
+/* 🧱 Caja externa de formulario */
+.formulario {
+    background-color: rgb(196, 124, 124);
+    width: 30%;
+    border-radius: 10px;
+    padding: 9px;
 }

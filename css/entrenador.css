@@ -1,66 +1,75 @@
+/* 🎮 Fuente retro tipo Pokémon */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Estilos generales */
+/* 🎨 Estilos generales para todo el body */
 body {
     font-family: 'Press Start 2P', cursive;
-    background: linear-gradient(135deg, #f8f8f8, #ffffff);
+    background: linear-gradient(135deg, #f8f8f8, #ffffff); /* fondo con gradiente claro */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* 🟥 Encabezado estilo Pokémon clásico */
 header {
-    background-color: #cc0000;
+    background-color: #cc0000; /* rojo intenso */
     color: #fff;
     text-align: center;
     padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* sombra debajo */
 }
 
+/* 📄 Contenido principal */
 main {
     padding: 2rem;
 }
 
+/* 🧱 Contenedor principal del contenido */
 .container {
     max-width: 900px;
     margin: auto;
-    background-color: #fff0f0;
+    background-color: #fff0f0; /* fondo rosado claro */
     padding: 1.5rem;
-    border-radius: 20px;
-    box-shadow: 0 0 10px #cc0000;
+    border-radius: 20px; /* bordes redondeados */
+    box-shadow: 0 0 10px #cc0000; /* sombra roja */
 }
 
+/* 🔤 Títulos llamativos en rojo */
 h1, h2, h3 {
     color: #cc0000;
 }
 
+/* 🔘 Botón estilo Pokémon */
 .button {
-    background-color: #e60000;
+    background-color: #e60000; /* rojo brillante */
     color: white;
     padding: 0.7rem 1.2rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; /* animación suave al pasar el mouse */
 }
 
+/* 🖱️ Efecto hover para botones */
 .button:hover {
-    background-color: #ff1a1a;
-    transform: scale(1.05);
+    background-color: #ff1a1a; /* rojo más claro al pasar mouse */
+    transform: scale(1.05); /* efecto de agrandamiento */
 }
 
+/* 🧑‍🏫 Tarjeta individual de entrenador */
 .entrenador-card {
     background-color: #fff;
     border: 2px solid #cc0000;
     border-radius: 15px;
     padding: 1rem;
     margin: 1rem 0;
-    box-shadow: 0 4px 8px rgba(204, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(204, 0, 0, 0.4); /* sombra con tinte rojo */
 }
 
+/* 🖼️ Imagen del entrenador o pokimon */
 .entrenador-card img {
     max-width: 100px;
     display: block;
-    margin: auto;
+    margin: auto; /* centrar imagen */
 }
