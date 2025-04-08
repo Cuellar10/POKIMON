@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // 📦 Lista de Pokimones disponibles
     const pokimones = [
-        { nombre: "Pikachu", tipo: "Eléctrico", ataque: 40, defensa: 29 },
-        { nombre: "Charmander", tipo: "Fuego", ataque: 42, defensa: 25 },
-        { nombre: "Charizard", tipo: "Fuego / Volador", ataque: 53, defensa: 44 },
-        { nombre: "Bulbasaur", tipo: "Planta / Veneno", ataque: 31, defensa: 27 },
-        { nombre: "Squirtle", tipo: "Agua", ataque: 30, defensa: 19 },
-        { nombre: "Gengar", tipo: "Fantasma / Veneno", ataque: 50, defensa: 45 },
-        { nombre: "Butterfree", tipo: "Bicho / Volador", ataque: 34, defensa: 20 }
+        { nombre: "Pikachu", tipo: "Eléctrico", ataque: 40, defensa: 29, ph: 73 },
+        { nombre: "Charmander", tipo: "Fuego", ataque: 42, defensa: 25, ph:81 },
+        { nombre: "Charizard", tipo: "Fuego / Volador", ataque: 53, defensa: 44, ph: 105 },
+        { nombre: "Bulbasaur", tipo: "Planta / Veneno", ataque: 31, defensa: 27, ph: 75 },
+        { nombre: "Squirtle", tipo: "Agua", ataque: 30, defensa: 19, ph:87},
+        { nombre: "Gengar", tipo: "Fantasma / Veneno", ataque: 50, defensa: 45, ph:124 },
+        { nombre: "Butterfree", tipo: "Bicho / Volador", ataque: 34, defensa: 20, ph:64 }
     ];
 
     // 🎯 Elementos del DOM que usaremos
@@ -29,31 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const tipoInput = document.getElementById("tipo");
     const ataqueInput = document.getElementById("ataque");
     const defensaInput = document.getElementById("defensa");
+    const phInput = document.getElementById("ph");
     const btnCombatir = document.getElementById("btnCombatir"); 
     const resultadoDiv = document.getElementById("resultadoCombate");
 
-    // 🔽 Llenar el menú desplegable con los nombres de los Pokimones
-    pokimones.forEach(p => {
-        const option = document.createElement("option");
-        option.value = p.nombre;
-        option.textContent = p.nombre;
-        select.appendChild(option);
-    });
-
-    // 📲 Al seleccionar un Pokimon, mostrar sus datos en los campos
-    select.addEventListener("change", function () {
-        const seleccionado = pokimones.find(p => p.nombre === this.value);
-
-        if (seleccionado) {
-            tipoInput.value = seleccionado.tipo;
-            ataqueInput.value = seleccionado.ataque;
-            defensaInput.value = seleccionado.defensa;
-        } else {
-            tipoInput.value = "";
-            ataqueInput.value = "";
-            defensaInput.value = "";
-        }
-    });
+   
 
     // ⚔️ Al hacer clic en el botón "Combatir"
     btnCombatir.addEventListener("click", function () {

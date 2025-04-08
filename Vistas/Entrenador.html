@@ -46,8 +46,8 @@
 
             <label for="nombrePokimon">Nombre de pokimon:</label>
             <select id="nombrePokimon">
-                <option value="">--Selecciona un Pokimon--</option>
-                <!-- Las opciones se llenarán dinámicamente desde JS -->
+             <option value="">--Selecciona un Pokimon--</option>   
+            
             </select><br><br>
 
             <label for="tipo">Tipo Pokimon:</label>
@@ -58,6 +58,9 @@
 
             <label for="defensa">Defensa:</label>
             <input type="text" id="defensa" readonly><br><br>
+
+            <label for="ph">Ph:</label>
+            <input type="text" id="ph" readonly><br><br>
         </fieldset>
 
         <!-- Sección de acciones -->
@@ -74,6 +77,38 @@
             <!-- Aquí aparecerá el resultado del combate -->
         </fieldset>
     </div>
+    <script>
+        
+    document.addEventListener('DOMContentLoaded', function () {
+        const datosGuardados = localStorage.getItem('pokimonSeleccionado');
+        if (datosGuardados) {
+            const pokimon = JSON.parse(datosGuardados);
+
+            // Agrega el pokimon al select si no está
+            const select = document.getElementById('nombrePokimon');
+            const opcionExistente = Array.from(select.options).find(opt => opt.value === pokimon.nombre);
+            
+            if (!opcionExistente) {
+                const nuevaOpcion = document.createElement('option');
+                nuevaOpcion.value = pokimon.nombre;
+                nuevaOpcion.textContent = pokimon.nombre;
+                nuevaOpcion.selected = true;
+                select.appendChild(nuevaOpcion);
+            } else {
+                opcionExistente.selected = true;
+            }
+
+            // Llena los demás campos
+            document.getElementById('tipo').value = pokimon.tipo;
+            document.getElementById('ataque').value = pokimon.ataque;
+            document.getElementById('defensa').value = pokimon.defensa;
+            document.getElementById('ph').value = pokimon.ph;
+
+            localStorage.removeItem('pokimonSeleccionado');
+        }
+    });
+</script>
+    
 </body>
 </html>
 

@@ -25,7 +25,7 @@
         <!-- Contenedor principal de todos los Pokimones -->
 
         <!-- Pokimon 1: Pikachu -->
-        <div class="pokimon">
+        <div class="pokimon" onclick="seleccionarPokimon('Pikachu', 'Eléctrico', 40, 29, 73)">
             <img src="../imagenes/Pika.png" alt="Charmeleon">
             <p>Pikachu</p>
             <div class="tipos">
@@ -33,10 +33,11 @@
             </div>
             <p class="stat">⚔️ Ataque: 40</p>
             <p class="stat">🛡️ Defensa: 29</p>
+            <p class="stat">​🩸 Ph: 73</p>
         </div>
 
         <!-- Pokimon 2: Charmander -->
-        <div class="pokimon">
+        <div class="pokimon" onclick="seleccionarPokimon('Charmander', 'Fuego', 42, 25, 81)">
             <img src="../imagenes/Charmander.png" alt="Charmander">
             <p>Charmander</p>
             <div class="tipos">
@@ -44,10 +45,11 @@
             </div>
             <p class="stat">⚔️ Ataque: 42</p>
             <p class="stat">🛡️ Defensa: 25</p>
+            <p class="stat">​🩸 Ph: 81</p>
         </div>
 
         <!-- Pokimon 3: Charizard -->
-        <div class="pokimon">
+        <div class="pokimon" onclick="seleccionarPokimon('Charizard', 'Fuego, Volador', 53, 44, 105)">
             <img src="../imagenes/Charizard.png" alt="Charmeleon">
             <p>Charizard</p>
             <div class="tipos">
@@ -56,10 +58,11 @@
             </div>
             <p class="stat">⚔️ Ataque: 53</p>
             <p class="stat">🛡️ Defensa: 44</p>
+            <p class="stat">​🩸 Ph: 105</p>
         </div>
 
         <!-- Pokimon 4: Bulbasaur -->
-        <div class="pokimon">
+        <div class="pokimon" onclick="seleccionarPokimon('Bulbasaur', 'Planta, Veneno', 31, 27, 75)">
             <img src="../imagenes/Bulbasaur.png" alt="Bulbasaur">
             <p>Bulbasaur</p>
             <div class="tipos">
@@ -68,10 +71,11 @@
             </div>
             <p class="stat">⚔️ Ataque: 31</p>
             <p class="stat">🛡️ Defensa: 27</p>
+            <p class="stat">​🩸 Ph: 75</p>
         </div>
 
         <!-- Pokimon 5: Squirtle -->
-        <div class="pokimon">
+        <div class="pokimon" onclick="seleccionarPokimon('Squirtle', 'Agua', 30, 19, 87)">
             <img src="../imagenes/Squirtle.png" alt="Squirtle">
             <p>Squirtle</p>
             <div class="tipos">
@@ -79,10 +83,11 @@
             </div>
             <p class="stat">⚔️ Ataque: 30</p>
             <p class="stat">🛡️ Defensa: 19</p>
+            <p class="stat">​🩸 Ph: 87</p>
         </div>
 
         <!-- Pokimon 6: Gengar -->
-        <div class="pokimon">
+        <div class="pokimon" onclick="seleccionarPokimon('Gengar', 'Fantasma, Veneno', 58, 45, 124)">
             <img src="../imagenes/Gengaruwu.png" alt="Gengar">
             <p>Gengar</p>
             <div class="tipos">
@@ -91,10 +96,11 @@
             </div>
             <p class="stat">⚔️ Ataque: 50</p>
             <p class="stat">🛡️ Defensa: 45</p>
+            <p class="stat">​🩸 Ph: 124</p>
         </div>
 
         <!-- Pokimon 7: Butterfree -->
-        <div class="pokimon">
+        <div class="pokimon" onclick="seleccionarPokimon('Butterfree', 'Bicho, Volador', 34, 20, 64)">
             <img src="../imagenes/mapirosa.png" alt="Butterfree">
             <p>Butterfree</p>
             <div class="tipos">
@@ -103,10 +109,25 @@
             </div>
             <p class="stat">⚔️ Ataque: 34</p>
             <p class="stat">🛡️ Defensa: 20</p>
+            <p class="stat">​🩸 Ph: 64</p> 
         </div>
 
     </div>
-    <!-- Fin del contenedor de pokimones -->
+    
+    <script>
+        function seleccionarPokimon(nombre, tipo, ataque, defensa, ph) {
+            const datos = {
+                nombre: nombre,
+                tipo: tipo,
+                ataque: ataque,
+                defensa: defensa,
+                ph: ph
+            };
+            localStorage.setItem('pokimonSeleccionado', JSON.stringify(datos));
+            window.location.href = 'entrenador.html';
+        }
+    </script>
+    
 </body>
 </html>
 
