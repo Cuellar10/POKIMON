@@ -1,84 +1,97 @@
+/* 🎮 Fuente retro tipo Pokémon */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body{
-    background-image: url('../imagenes/fondo.jpg');
-    background-size: cover;
+/* 🌌 Fondo del body con imagen */
+body {
+    background-image: url('../imagenes/fondo.jpg'); /* imagen de fondo */
+    background-size: cover; /* que cubra todo */
 }
 
-.titlePoki{
-    font-family: Pokimon;
+/* 🔤 Título principal con fuente personalizada */
+.titlePoki {
+    font-family: Pokimon; /* fuente alternativa personalizada */
     color: white;
     font-size: 50px;
 }
 
-.container{
+/* 📦 Contenedor principal alineado a la izquierda */
+.container {
     display: flex;
     justify-content: left;
     align-items: left;
     height: 60vh;
 }
-.container-seg{
+
+/* 📦 Contenedor secundario (oculto con altura cero) */
+.container-seg {
     display: flex;
     justify-content: left;
     align-items: left;
     height: 0vh;
 }
 
+/* 🟥 Título grande con sombra y fuente retro */
 .container h1 {
     font-size: 5rem;
-    color: #a71f1f;
+    color: #a71f1f; /* rojo fuerte */
     text-shadow:
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000; /* contorno estilo pixel */
     font-family: 'Press Start 2P', cursive;
 }
 
-.titleSub-poki{
+/* 🧭 Subtítulo alineado a la izquierda */
+.titleSub-poki {
     justify-content: left;
 }
 
-.text-poki{
+/* 📜 Texto estilizado estilo Pokémon */
+.text-poki {
     color: white;
     font-family: 'Press Start 2P', cursive;
     font-size: 25px;
     text-shadow:
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
-
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
 }
 
-.botton-group{
+/* 🎮 Grupo de botones alineado a la izquierda */
+.botton-group {
     display: flex;
     justify-content: left;
     align-items: left;
     margin: 10px;
 }
 
-.formulario-poki{
+/* 📄 Caja del formulario blanco con sombra */
+.formulario-poki {
     background-color: white;
     height: 90px;
     width: 30%;
-    border-radius: 10PX;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: #fff 0px 0px 20px;
     text-align: center;
 }
 
-table{
+/* 📋 Tabla para el formulario */
+table {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
 }
 
-table td{
+/* 🔡 Fuente de las celdas */
+table td {
     font-family: 'Press Start 2P', cursive;
 }
 
-.botton-poki{
+/* 🔘 Botón rojo con sombra blanca */
+.botton-poki {
     background-color: red;
     color: white;
     border-radius: 20px;
@@ -91,7 +104,8 @@ table td{
     box-shadow: #fff 0px 0px 10px;
 }
 
-.botton-poki:hover{
+/* 🖱️ Hover del botón: blanco con texto rojo */
+.botton-poki:hover {
     background-color: #fff;
     color: red;
     cursor: pointer;
@@ -99,14 +113,16 @@ table td{
     transition: 0.5s;
 }
 
-.input-poki{    
+/* 📝 Input con borde rojo redondeado */
+.input-poki {
     border: solid 1px red;
     border-radius: 15px;
     height: 20px;
     padding: 6px;
 }
 
-.link-poki{
+/* 🔗 Link con fuente retro blanca */
+.link-poki {
     font-family: 'Press Start 2P', cursive;
     color: white;
 }

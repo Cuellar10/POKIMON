@@ -1,85 +1,86 @@
 <!DOCTYPE html>
+<!-- Indica que el documento está escrito en HTML5 -->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registrarse</title>
-        <script src="../js/registrar.js"></script>
-        <link rel="stylesheet" href="../css/registrar.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="titleSub-poki">
-                <h1 class="titlePoki">CREA TU NUEVO USUARIO</h1>
-                <p class="text-poki">Registrarte para vivir la experiencia</p>
-            </div>
+<!-- Define el idioma principal del documento como inglés (puedes cambiarlo a "es") -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres en UTF-8 para soportar acentos y caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el sitio sea responsive (adaptable a dispositivos móviles) -->
+
+    <title>Registrarse</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <script src="../js/registrar.js"></script>
+    <!-- Vincula el archivo JavaScript con la lógica del formulario de registro -->
+
+    <link rel="stylesheet" href="../css/registrar.css">
+    <!-- Enlace al archivo CSS con los estilos del formulario -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Contenedor del encabezado -->
+        <div class="titleSub-poki">
+            <h1 class="titlePoki">CREA TU NUEVO USUARIO</h1>
+            <!-- Título principal de la página -->
+
+            <p class="text-poki">Registrarte para vivir la experiencia</p>
+            <!-- Subtítulo con una breve descripción -->
         </div>
-        <div class="container">
-            <div class="formulario">
-                <table>
-                    <tr>
-                        <td>
-                            <label for>Nombre</label>
-                        </td>
-                        <td>
-                            <input type="text" class="input-poki" name="nombre" id="nombre" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for>Apellido</label>
-                        </td>
-                        <td>
-                            <input type="text" class="input-poki" name="apellido" id="apellido" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for>Dirección</label>
-                        </td>
-                        <td>
-                            <input type="text" class="input-poki" name="direccion" id="direccion" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for>Teléfono</label>
-                        </td>
-                        <td>
-                            <input type="text" class="input-poki" name="telefono" id="telefono" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for>Email</label>
-                        </td>
-                        <td>
-                            <input type="email" class="input-poki" name="email" id="email" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for>Password</label>
-                        </td>
-                        <td>
-                            <input type="password" class="input-poki" name="contrasena" id="contrasena" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for>Re-Password</label>
-                        </td>
-                        <td>
-                            <input type="password" class="input-poki" name="contrasenaConfirm" id="contrasenaConfirm" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align: center;">
-                            <button onclick="Registrar()" class="botton-poki">Registrar</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+    </div>
+
+    <div class="container">
+        <!-- Segundo contenedor para el formulario de registro -->
+        <div class="formulario">
+            <!-- Tabla que organiza los campos del formulario -->
+            <table>
+                <tr>
+                    <td><label for>Nombre</label></td>
+                    <td><input type="text" class="input-poki" name="nombre" id="nombre" /></td>
+                    <!-- Campo para ingresar el nombre del usuario -->
+                </tr>
+                <tr>
+                    <td><label for>Apellido</label></td>
+                    <td><input type="text" class="input-poki" name="apellido" id="apellido" /></td>
+                    <!-- Campo para ingresar el apellido -->
+                </tr>
+                <tr>
+                    <td><label for>Dirección</label></td>
+                    <td><input type="text" class="input-poki" name="direccion" id="direccion" /></td>
+                    <!-- Campo para ingresar la dirección del usuario -->
+                </tr>
+                <tr>
+                    <td><label for>Teléfono</label></td>
+                    <td><input type="text" class="input-poki" name="telefono" id="telefono" /></td>
+                    <!-- Campo para ingresar el número de teléfono -->
+                </tr>
+                <tr>
+                    <td><label for>Email</label></td>
+                    <td><input type="email" class="input-poki" name="email" id="email" /></td>
+                    <!-- Campo para ingresar el correo electrónico -->
+                </tr>
+                <tr>
+                    <td><label for>Password</label></td>
+                    <td><input type="password" class="input-poki" name="contrasena" id="contrasena" /></td>
+                    <!-- Campo para ingresar la contraseña -->
+                </tr>
+                <tr>
+                    <td><label for>Re-Password</label></td>
+                    <td><input type="password" class="input-poki" name="contrasenaConfirm" id="contrasenaConfirm" /></td>
+                    <!-- Campo para confirmar la contraseña -->
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <!-- Botón que ejecuta la función Registrar() al hacer clic -->
+                        <button onclick="Registrar()" class="botton-poki">Registrar</button>
+                    </td>
+                </tr>
+            </table>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

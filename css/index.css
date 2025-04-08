@@ -1,62 +1,69 @@
+/* 🎮 Fuente estilo retro para todo el sitio */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
-body{
+/* 🌌 Fondo general del cuerpo con imagen de Charizard */
+body {
     font-family: 'Press Start 2P', cursive;
-    background-image: url('../imagenes/chari.png');
-    background-size: cover;
+    background-image: url('../imagenes/chari.png'); /* fondo con imagen */
+    background-size: cover; /* que cubra toda la pantalla */
 }
 
-.titlePoki{
-    font-family: cursive;
+/* 🔤 Título principal con fuente distinta */
+.titlePoki {
+    font-family: cursive; /* fuente alternativa para títulos */
 }
 
-.container{
+/* 📦 Contenedor centrado con flexbox */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 70vh; /* altura del contenedor */
+}
 
-}.container h1 {
-    color: #cc0000;
+/* 🟥 Estilo del título principal dentro del contenedor */
+.container h1 {
+    color: #cc0000; /* rojo fuerte tipo Pokémon */
     font-size: 5rem;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     text-shadow:
-      -2px -2px 0 #000,  
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      2px 2px 0 #000; 
-  
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000; /* contorno tipo pixel art */
 }
 
-
-.titleSub-poki{
+/* 🧭 Subtítulo alineado a la izquierda */
+.titleSub-poki {
     justify-content: left;
 }
 
-.text-poki{
+/* 📜 Texto estilo pokémon centrado, grande y con sombra */
+.text-poki {
     color: white;
     font-family: 'Press Start 2P', cursive;
     font-size: 27px;
     text-align: center;
     text-shadow:
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000; /* contorno negro estilo retro */
 }
 
+/* 🎮 Contenedor de botones con espaciado */
 .botton-group {
     display: flex;
     justify-content: center; 
     align-items: center;     
     margin: 20px auto;       
-    gap: 20px;               
+    gap: 20px;               /* separación entre botones */
 }
 
-.botton-poki{
-    background-color: rgb(145, 11, 11);
+/* 🔘 Botones de acción estilo Pokémon */
+.botton-poki {
+    background-color: rgb(145, 11, 11); /* rojo oscuro tipo pokebola */
     color: #000000;
     border-radius: 20px;
     height: 70px;
@@ -65,13 +72,15 @@ body{
     font-family: 'Press Start 2P', cursive;
     border: none;
     margin: 6px;
-    box-shadow: #000000 10px 10px 20px;
+    box-shadow: #000000 10px 10px 20px; /* sombra tipo pixel */
 }
 
-.botton-poki:hover{
+/* 🖱️ Efecto hover de botón */
+.botton-poki:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.5s; /* animación suave */
 }
+
 

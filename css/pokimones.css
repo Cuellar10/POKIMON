@@ -1,96 +1,117 @@
+/* 🎨 Estilo general del cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* fondo gris claro */
+  text-align: center;
 }
 
+/* 🟥 Título principal */
 h1 {
-    color: #333;
+  color: #333; /* gris oscuro */
 }
 
+/* 📦 Contenedor que organiza los Pokimones */
 .pokimon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    height: 250px;
+  display: flex;
+  flex-wrap: wrap;        /* permite que salten de línea */
+  justify-content: center; 
+  gap: 40px;               /* espacio entre pokimones */
+  padding: 20px;
+  height: 250px;
 }
 
+/* 🧱 Tarjeta individual del Pokimon */
 .pokimon {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 10px;
-    width: 150px;
-    transition: transform 0.2s;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombrita */
+  padding: 10px;
+  width: 150px;
+  transition: transform 0.2s; /* animación al pasar el mouse */
 }
 
+/* 🖼️ Imagen del pokimon */
 .pokimon img {
-    width: 130px;
-    height: 130px;
+  width: 130px;
+  height: 130px;
 }
 
+/* 📛 Nombre del pokimon */
 .pokimon p {
-    margin-top: 10px;
-    font-weight: bold;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
+/* 🌀 Efecto al pasar el cursor */
 .pokimon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1); /* agranda */
 }
+
+/* 🏷️ Etiqueta de tipo de Pokimon */
 .tipo {
-    display: inline-block;
-    padding: 2px 8px;
-    margin: 0 3px;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    color: white;
-    font-weight: bold;
-  }
-  .veneno {
-    background-color: #A040A0;
-  }
-  
-  .fuego {
-    background-color: #F08030;
-  }
-  .agua {
-    background-color: #6890F0;
-  }
-  .tierra {
-    background-color: #E0C068;
-  }
-  .electrico {
-    background-color: #F8D030;
-  }
-  .hielo {
-    background-color: #98D8D8;
-  }
-  .lucha {
-    background-color: #C03028;
-  }
-  .normal {
-    background-color: #A8A878;
-  }
-  .roca {
-    background-color: #838280;
-  }
-  .volador{
-    background-color: #20066e;
-  }
-  .planta{
-    background-color: green;
-  }
-  .fantasma{
-    background-color: #705898;
-  }
-  .bicho{
-    background-color: #A8B820;
-  }
-  
-  
-  .stat {
-    font-size: 0.85rem;
-    margin: 0.2rem 0;
-  }
+  display: inline-block;
+  padding: 2px 8px;
+  margin: 0 3px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* 🎨 Colores por tipo de pokimon */
+.veneno {
+  background-color: #A040A0;
+}
+
+.fuego {
+  background-color: #F08030;
+}
+
+.agua {
+  background-color: #6890F0;
+}
+
+.tierra {
+  background-color: #E0C068;
+}
+
+.electrico {
+  background-color: #F8D030;
+}
+
+.hielo {
+  background-color: #98D8D8;
+}
+
+.lucha {
+  background-color: #C03028;
+}
+
+.normal {
+  background-color: #A8A878;
+}
+
+.roca {
+  background-color: #838280;
+}
+
+.volador {
+  background-color: #20066e;
+}
+
+.planta {
+  background-color: green;
+}
+
+.fantasma {
+  background-color: #705898;
+}
+
+.bicho {
+  background-color: #A8B820;
+}
+/* 📊 Estadísticas */
+.stat {
+  font-size: 0.85rem;
+  margin: 0.2rem 0;
+}
